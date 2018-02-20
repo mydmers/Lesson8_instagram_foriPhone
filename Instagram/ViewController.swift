@@ -8,6 +8,8 @@
 
 import UIKit
 import ESTabBarController
+import Firebase // 先頭でFirebaseをimportしておく
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
@@ -51,5 +53,14 @@ class ViewController: UIViewController {
             let imageViewController = self.storyboard?.instantiateViewController(withIdentifier: "ImageSelect")
             self.present(imageViewController!, animated: true, completion: nil)
         }, at: 1)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // currentUserがnilならログインしていない
+        if Auth.auth().currentUser == nil {
+            // ログインしていないときの処理
+        }
     }
 }

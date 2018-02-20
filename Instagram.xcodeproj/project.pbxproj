@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A24322E203C94730068759F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A24322D203C94730068759F /* GoogleService-Info.plist */; };
 		0A834B2C2039D86600BC18B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A834B2B2039D86600BC18B6 /* AppDelegate.swift */; };
 		0A834B2E2039D86600BC18B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A834B2D2039D86600BC18B6 /* ViewController.swift */; };
 		0A834B312039D86600BC18B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A834B2F2039D86600BC18B6 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A24322D203C94730068759F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A834B282039D86600BC18B6 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A834B2B2039D86600BC18B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A834B2D2039D86600BC18B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				0A834B322039D86600BC18B6 /* Assets.xcassets */,
 				0A834B342039D86600BC18B6 /* LaunchScreen.storyboard */,
 				0A834B372039D86600BC18B6 /* Info.plist */,
+				0A24322D203C94730068759F /* GoogleService-Info.plist */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A834B362039D86600BC18B6 /* LaunchScreen.storyboard in Resources */,
+				0A24322E203C94730068759F /* GoogleService-Info.plist in Resources */,
 				0A834B332039D86600BC18B6 /* Assets.xcassets in Resources */,
 				0A834B312039D86600BC18B6 /* Main.storyboard in Resources */,
 			);
