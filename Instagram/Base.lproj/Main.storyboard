@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17E150g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -92,8 +92,68 @@
                     <view key="view" contentMode="scaleToFill" id="RNp-g4-GA6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Yn-AG-YeR">
+                                <rect key="frame" x="37.5" y="100" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tnu-cu-EQh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yxq-iu-ICF">
+                                <rect key="frame" x="37.5" y="140" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="b0q-4l-DBX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="アカウント作成時は表示名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1u-j3-ZLb">
+                                <rect key="frame" x="37.5" y="180" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GoE-mG-lHY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg6-ej-5Fp">
+                                <rect key="frame" x="37.5" y="220" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="PNd-ka-QYO"/>
+                                </constraints>
+                                <state key="normal" title="ログイン" backgroundImage="btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czz-cQ-Rrq">
+                                <rect key="frame" x="37.5" y="270" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8Ts-uM-pTX"/>
+                                </constraints>
+                                <state key="normal" title="アカウント作成" backgroundImage="btn"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hg6-ej-5Fp" firstAttribute="centerX" secondItem="RNp-g4-GA6" secondAttribute="centerX" id="4a5-NQ-eNJ"/>
+                            <constraint firstItem="z1u-j3-ZLb" firstAttribute="top" secondItem="Yxq-iu-ICF" secondAttribute="bottom" constant="10" id="JoF-AV-d8A"/>
+                            <constraint firstItem="Czz-cQ-Rrq" firstAttribute="top" secondItem="Hg6-ej-5Fp" secondAttribute="bottom" constant="10" id="TPU-av-wNR"/>
+                            <constraint firstItem="0Yn-AG-YeR" firstAttribute="centerX" secondItem="RNp-g4-GA6" secondAttribute="centerX" id="ZZb-bJ-OhQ"/>
+                            <constraint firstItem="z1u-j3-ZLb" firstAttribute="centerX" secondItem="RNp-g4-GA6" secondAttribute="centerX" id="Zsm-hh-iLM"/>
+                            <constraint firstItem="Hg6-ej-5Fp" firstAttribute="top" secondItem="z1u-j3-ZLb" secondAttribute="bottom" constant="10" id="fvE-37-hPA"/>
+                            <constraint firstItem="0Yn-AG-YeR" firstAttribute="top" secondItem="klg-zQ-8VO" secondAttribute="bottom" constant="80" id="h20-p6-Kj7"/>
+                            <constraint firstItem="Yxq-iu-ICF" firstAttribute="centerX" secondItem="RNp-g4-GA6" secondAttribute="centerX" id="hbJ-mS-seU"/>
+                            <constraint firstItem="Yxq-iu-ICF" firstAttribute="top" secondItem="0Yn-AG-YeR" secondAttribute="bottom" constant="10" id="okw-dY-RUd"/>
+                            <constraint firstItem="Czz-cQ-Rrq" firstAttribute="centerX" secondItem="RNp-g4-GA6" secondAttribute="centerX" id="wgm-GE-gh4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="z1u-j3-ZLb" id="zOA-67-VaU"/>
+                        <outlet property="mailAddressTextField" destination="0Yn-AG-YeR" id="nAw-wq-Gpv"/>
+                        <outlet property="passwordTextField" destination="Yxq-iu-ICF" id="XKH-d3-fyr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qn5-XH-aMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,4 +178,7 @@
             <point key="canvasLocation" x="103" y="34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn" width="300" height="40"/>
+    </resources>
 </document>
