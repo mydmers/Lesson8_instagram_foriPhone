@@ -116,7 +116,7 @@
                                 </constraints>
                                 <state key="normal" title="投稿" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handlePostButton:" destination="rKl-1e-1ZG" eventType="touchUpInside" id="Luq-Ut-LUN"/>
+                                    <action selector="handlePostButton:" destination="rKl-1e-1ZG" eventType="touchUpInside" id="Pzy-8D-hmV"/>
                                 </connections>
                             </button>
                         </subviews>

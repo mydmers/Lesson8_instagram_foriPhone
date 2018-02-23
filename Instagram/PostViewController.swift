@@ -11,7 +11,6 @@ import Firebase
 import FirebaseDatabase
 import SVProgressHUD
 
-
 class PostViewController: UIViewController {
     var image: UIImage!
     
@@ -19,8 +18,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     // 投稿ボタンをタップしたときに呼ばれるメソッド
-    @IBAction func handlePostButton(_ sender: UIButton) {
-        
+    @IBAction func handlePostButton(sender: UIButton) {
         // ImageViewから画像を取得する
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.5)
         let imageString = imageData!.base64EncodedString(options: .lineLength64Characters)
@@ -43,31 +41,20 @@ class PostViewController: UIViewController {
     
     // キャンセルボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleCancelButton(_ sender: Any) {
+        // 画面を閉じる
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        // 受け取った画像をImageViewに設定する
+        // フォトライブラリやカメラから受け取った画像をImageViewに設定する
         imageView.image = image
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

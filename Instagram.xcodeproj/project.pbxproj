@@ -33,7 +33,7 @@
 		0AB4F6C9203B419E008C9C36 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4F6C8203B419E008C9C36 /* ImageSelectViewController.swift */; };
 		0AB4F6CB203B41BE008C9C36 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4F6CA203B41BD008C9C36 /* PostViewController.swift */; };
 		0AB4F6CD203B41D5008C9C36 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4F6CC203B41D5008C9C36 /* SettingViewController.swift */; };
-		95B69AC8203CB57D00A385BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95B69AC7203CB57D00A385BB /* GoogleService-Info.plist */; };
+		9591BF6E20403B9D00C0C94E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9591BF6D20403B9D00C0C94E /* GoogleService-Info.plist */; };
 		A8157399C6D7CBF63F1CDFB4 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD4D02223C80A8C08C9390E /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +66,7 @@
 		0A120D29203F1B42007D0391 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		0A120D2B203F1B51007D0391 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0A120D2D203F1B6F007D0391 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		0A120D30203F204A007D0391 /* Instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Instagram-Bridging-Header.h"; path = "Instagram/Instagram-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A120D30203F204A007D0391 /* Instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instagram-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A120D31203F369A007D0391 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		0A834B282039D86600BC18B6 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A834B2B2039D86600BC18B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		0AB4F6CC203B41D5008C9C36 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		752E11AC6F57DC85F520119A /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		82D3C231A7B56EC589F66B62 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
-		95B69AC7203CB57D00A385BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9591BF6D20403B9D00C0C94E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBD4D02223C80A8C08C9390E /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,7 +114,6 @@
 		0A834B1F2039D86600BC18B6 = {
 			isa = PBXGroup;
 			children = (
-				0A120D30203F204A007D0391 /* Instagram-Bridging-Header.h */,
 				0A834B2A2039D86600BC18B6 /* Instagram */,
 				0A834B292039D86600BC18B6 /* Products */,
 				B5F2532A7B914B744AB202A2 /* Pods */,
@@ -133,6 +132,7 @@
 		0A834B2A2039D86600BC18B6 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				0A120D30203F204A007D0391 /* Instagram-Bridging-Header.h */,
 				0A120D10203F1708007D0391 /* AdobeCreativeSDKCore.framework */,
 				0A120D11203F1708007D0391 /* AdobeCreativeSDKImage.framework */,
 				0A834B2B2039D86600BC18B6 /* AppDelegate.swift */,
@@ -145,9 +145,9 @@
 				0A834B2D2039D86600BC18B6 /* ViewController.swift */,
 				0A834B322039D86600BC18B6 /* Assets.xcassets */,
 				0A834B342039D86600BC18B6 /* LaunchScreen.storyboard */,
-				95B69AC7203CB57D00A385BB /* GoogleService-Info.plist */,
 				0A834B372039D86600BC18B6 /* Info.plist */,
 				0A120D31203F369A007D0391 /* Const.swift */,
+				9591BF6D20403B9D00C0C94E /* GoogleService-Info.plist */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A834B362039D86600BC18B6 /* LaunchScreen.storyboard in Resources */,
-				95B69AC8203CB57D00A385BB /* GoogleService-Info.plist in Resources */,
+				9591BF6E20403B9D00C0C94E /* GoogleService-Info.plist in Resources */,
 				0A834B332039D86600BC18B6 /* Assets.xcassets in Resources */,
 				0A834B312039D86600BC18B6 /* Main.storyboard in Resources */,
 			);
