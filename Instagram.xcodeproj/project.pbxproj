@@ -23,6 +23,7 @@
 		0A120D2C203F1B51007D0391 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A120D2B203F1B51007D0391 /* libz.tbd */; };
 		0A120D2E203F1B6F007D0391 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A120D2D203F1B6F007D0391 /* libc++.tbd */; };
 		0A120D32203F369A007D0391 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A120D31203F369A007D0391 /* Const.swift */; };
+		0A70D6C52041A26C00843835 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D6C42041A26C00843835 /* PostData.swift */; };
 		0A834B2C2039D86600BC18B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A834B2B2039D86600BC18B6 /* AppDelegate.swift */; };
 		0A834B2E2039D86600BC18B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A834B2D2039D86600BC18B6 /* ViewController.swift */; };
 		0A834B312039D86600BC18B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A834B2F2039D86600BC18B6 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		0A120D2D203F1B6F007D0391 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0A120D30203F204A007D0391 /* Instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instagram-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A120D31203F369A007D0391 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		0A70D6C42041A26C00843835 /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		0A834B282039D86600BC18B6 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A834B2B2039D86600BC18B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A834B2D2039D86600BC18B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				0A834B2F2039D86600BC18B6 /* Main.storyboard */,
 				0AB4F6C4203B4155008C9C36 /* HomeViewController.swift */,
 				0AB4F6C8203B419E008C9C36 /* ImageSelectViewController.swift */,
+				0A70D6C42041A26C00843835 /* PostData.swift */,
 				0AB4F6CA203B41BD008C9C36 /* PostViewController.swift */,
 				0AB4F6CC203B41D5008C9C36 /* SettingViewController.swift */,
 				0AB4F6C6203B4169008C9C36 /* LoginViewController.swift */,
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB4F6CB203B41BE008C9C36 /* PostViewController.swift in Sources */,
+				0A70D6C52041A26C00843835 /* PostData.swift in Sources */,
 				0AB4F6C7203B4169008C9C36 /* LoginViewController.swift in Sources */,
 				0A834B2E2039D86600BC18B6 /* ViewController.swift in Sources */,
 				0A834B2C2039D86600BC18B6 /* AppDelegate.swift in Sources */,
