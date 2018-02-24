@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17E160e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,7 +38,7 @@
                                 </constraints>
                                 <state key="normal" title="表示名を変更" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleChangeButton:" destination="Hfn-id-ZUB" eventType="touchUpInside" id="bnq-Yv-7pl"/>
+                                    <action selector="handleChangeButton:" destination="Hfn-id-ZUB" eventType="touchUpInside" id="6au-Wv-AmV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDn-NX-bPB">
@@ -48,7 +48,7 @@
                                 </constraints>
                                 <state key="normal" title="ログアウト" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleLogoutButton:" destination="Hfn-id-ZUB" eventType="touchUpInside" id="Fdv-PW-f1B"/>
+                                    <action selector="handleLogoutButton:" destination="Hfn-id-ZUB" eventType="touchUpInside" id="14f-af-E4b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,7 +63,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="displayNameTextField" destination="1X2-YF-TQk" id="Vls-nm-xd2"/>
+                        <outlet property="displayNameTextField" destination="1X2-YF-TQk" id="ZMQ-YX-y2N"/>
                         <outlet property="handleChangeButton" destination="xhL-AL-YCX" id="DkV-Yv-1KX"/>
                         <outlet property="handleLogoutButton" destination="xDn-NX-bPB" id="xAQ-VD-dJ5"/>
                     </connections>
@@ -116,7 +116,7 @@
                                 </constraints>
                                 <state key="normal" title="投稿" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handlePostButton:" destination="rKl-1e-1ZG" eventType="touchUpInside" id="Pzy-8D-hmV"/>
+                                    <action selector="handlePostButton:" destination="rKl-1e-1ZG" eventType="touchUpInside" id="9sv-jt-gWu"/>
                                 </connections>
                             </button>
                         </subviews>
