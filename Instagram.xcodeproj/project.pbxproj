@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A04C2782042F76300796CC6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04C2762042F76300796CC6 /* PostTableViewCell.swift */; };
+		0A04C2792042F76300796CC6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A04C2772042F76300796CC6 /* PostTableViewCell.xib */; };
 		0A120D13203F1708007D0391 /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A120D11203F1708007D0391 /* AdobeCreativeSDKImage.framework */; };
 		0A120D14203F17A3007D0391 /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A120D10203F1708007D0391 /* AdobeCreativeSDKCore.framework */; };
 		0A120D15203F17A3007D0391 /* AdobeCreativeSDKCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A120D10203F1708007D0391 /* AdobeCreativeSDKCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -54,6 +56,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A04C2762042F76300796CC6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		0A04C2772042F76300796CC6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		0A120D10203F1708007D0391 /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
 		0A120D11203F1708007D0391 /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
 		0A120D19203F1A9D007D0391 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -143,6 +147,8 @@
 				0AB4F6C8203B419E008C9C36 /* ImageSelectViewController.swift */,
 				0A70D6C42041A26C00843835 /* PostData.swift */,
 				0AB4F6CA203B41BD008C9C36 /* PostViewController.swift */,
+				0A04C2762042F76300796CC6 /* PostTableViewCell.swift */,
+				0A04C2772042F76300796CC6 /* PostTableViewCell.xib */,
 				0AB4F6CC203B41D5008C9C36 /* SettingViewController.swift */,
 				0AB4F6C6203B4169008C9C36 /* LoginViewController.swift */,
 				0A834B2D2039D86600BC18B6 /* ViewController.swift */,
@@ -248,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A834B362039D86600BC18B6 /* LaunchScreen.storyboard in Resources */,
+				0A04C2792042F76300796CC6 /* PostTableViewCell.xib in Resources */,
 				9591BF6E20403B9D00C0C94E /* GoogleService-Info.plist in Resources */,
 				0A834B332039D86600BC18B6 /* Assets.xcassets in Resources */,
 				0A834B312039D86600BC18B6 /* Main.storyboard in Resources */,
@@ -329,6 +336,7 @@
 				0A834B2C2039D86600BC18B6 /* AppDelegate.swift in Sources */,
 				0AB4F6C9203B419E008C9C36 /* ImageSelectViewController.swift in Sources */,
 				0A120D32203F369A007D0391 /* Const.swift in Sources */,
+				0A04C2782042F76300796CC6 /* PostTableViewCell.swift in Sources */,
 				0AB4F6CD203B41D5008C9C36 /* SettingViewController.swift in Sources */,
 				0AB4F6C5203B4155008C9C36 /* HomeViewController.swift in Sources */,
 			);
