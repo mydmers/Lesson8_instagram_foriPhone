@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postImageView: UIImageView!
@@ -15,6 +18,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var comment: UILabel!
+    @IBOutlet weak var poster: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,12 +36,22 @@ class PostTableViewCell: UITableViewCell {
         self.postImageView.image = postData.image
         
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        
+//------------------------------------------------------------------------------
+        if let poster = postData.posters {
+            self.poster.text = "\(poster)"
+        }
+        
+        if let comment = postData.comments {
+            self.comment.text = "\(comment)"
+        }
+//*-------------------------------------------------------------------------
         let likeNumber = postData.likes.count
         likeLabel.text = "\(likeNumber)"
         
         let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        formatter.dateFormat = "yyMMdd HH:mm"
         
         let dateString:String = formatter.string(from: postData.date! as Date)
         self.dateLabel.text = dateString

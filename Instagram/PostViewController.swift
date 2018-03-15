@@ -16,9 +16,6 @@ class PostViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var posted: UITextView!
-    @IBOutlet weak var poster: UITextField!
-    
     // 投稿ボタンをタップしたときに呼ばれるメソッド
     @IBAction func handlePostButton(_ sender: UIButton) {
         // ImageViewから画像を取得する
@@ -31,7 +28,7 @@ class PostViewController: UIViewController {
         
         // 辞書を作成してFirebaseに保存する
         let postRef = Database.database().reference().child(Const.PostPath)
-        let postData = ["caption": textField.text!, "image": imageString, "time": String(time),"comment": String(describing: posted), "poster": String(describing: poster), "name": name!]
+        let postData = ["caption": textField.text!, "image": imageString, "time": String(time),"name": name!]
         postRef.childByAutoId().setValue(postData)
         
         // HUDで投稿完了を表示する
