@@ -2,7 +2,7 @@
 //  CommentViewController.swift
 //  Instagram
 //
-//  Created by yosi on 2018/03/04.
+//  Created by yosi on 2018/03/04./Users/yosi/Google_Drive/TechAcademy/ウケ放題/iPhoneアプリ/Lesson8/Instagramp/Instagram.xcodeproj
 //  Copyright © 2018年 mydmers. All rights reserved.
 //
 
@@ -21,18 +21,22 @@ class CommentViewController: UIViewController {
         
         // 増えたcommentとposterをFirebaseに保存する
         let postRef2 = Database.database().reference().child(Const.PostPath).child(postData.id!)
-        
-        if let comment = postData.comments {
-            postData.comments?.append(Comment.text)
-            postRef2.updateChildValues(["Comment": comment])
-        }
 
-        if let poster = postData.posters {
-            postData.posters?.append(Poster.text!)
-            postRef2.updateChildValues(["Poster": poster])
+        if let commentText = Comment.text {
+            postData.comments?.append(commentText)
+            postRef2.updateChildValues(["comments": postData.comments!])
+         }
+
+        if let posterText = Poster.text {
+            postData.posters?.append(posterText)
+            postRef2.updateChildValues(["posters": postData.posters!])
         }
         
-        
+/*  let name = Auth.auth().currentUser?.displayName
+        postData.comments.append("\(name!):\(Comment.text!)")
+        postData.comments.append(["\(name!):\(Comment.text!)"])
+        postRef2.updateChildValues(["Comment": Comment]) */
+
         //前の画面に戻る
         self.dismiss(animated: true, completion: nil)
     }

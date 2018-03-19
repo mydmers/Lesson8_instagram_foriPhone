@@ -38,13 +38,43 @@ class PostTableViewCell: UITableViewCell {
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
         
 //------------------------------------------------------------------------------
-        if let poster = postData.posters {
-            self.poster.text = "\(poster)"
+        var commentText = ""
+        var posterText = ""
+        var combinedText = ""
+        for i in postData.comments! {
+            posterText = "\(String(describing: postData.posters?[index(ofAccessibilityElement: poster)]))"
+            commentText = "\(postData.comments!)"
+            combinedText += "\(posterText) : \(commentText)\n"
+            self.comment.text = combinedText + "\n"
+            combinedText = ""
         }
+//        self.comment.text = combinedText
+        
+        /*        if let poster = postData.posters {
+            self.poster.text = "\(poster)"
+        } */
+        
+/*        let name = Auth.auth().currentUser?.displayName
+        self.poster.text = name
+        
+        if let comment = postData.comments {
+            self.comment.text = "\(comment)"
+        }*/
+        
+/*        var posterText = ""
+        for poster in postData.posters! {
+            posterText += "\(poster)\n"
+        }
+        self.poster.text = posterText
         
         if let comment = postData.comments {
             self.comment.text = "\(comment)"
         }
+        
+        if let poster = postData.posters {
+            self.poster.text = "\(poster)"
+        }*/
+
 //*-------------------------------------------------------------------------
         let likeNumber = postData.likes.count
         likeLabel.text = "\(likeNumber)"
