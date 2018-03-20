@@ -69,41 +69,19 @@
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="Comment" backgroundImage="btn"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdz-uf-Ots">
-                        <rect key="frame" x="23" y="458.5" width="291" height="50"/>
-                        <accessibility key="accessibilityConfiguration" hint="aa"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="50" id="Ncm-U9-U62"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="投稿者" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kox-Pu-aTW">
-                        <rect key="frame" x="18" y="518.5" width="60" height="36"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="60" id="Pcx-QK-3Mk"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="sZB-HH-Atr"/>
-                        </constraints>
-                        <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="poster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izD-vv-g4X">
-                        <rect key="frame" x="83" y="526.5" width="150" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="150" id="0x1-2W-k4Z"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="83p-sf-bbh"/>
-                            <constraint firstAttribute="height" constant="20" id="yad-pg-aYD"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿者：コメント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzZ-Lf-RAK">
-                        <rect key="frame" x="18" y="434" width="110" height="19.5"/>
+                        <rect key="frame" x="18" y="434" width="110" height="32.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="110" id="E3D-F6-kj1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ja-bz-9aM">
+                        <rect key="frame" x="18" y="466.5" width="296" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="09A-M8-TXk"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
@@ -113,13 +91,9 @@
                 <constraints>
                     <constraint firstItem="QzE-xK-Sp0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="6PR-Ir-oTs"/>
                     <constraint firstItem="zzZ-Lf-RAK" firstAttribute="top" secondItem="QzE-xK-Sp0" secondAttribute="bottom" constant="10" id="8jp-w3-PSr"/>
-                    <constraint firstAttribute="bottom" secondItem="Kox-Pu-aTW" secondAttribute="bottom" constant="5" id="A0J-CC-0aE"/>
                     <constraint firstItem="XdR-KZ-xA8" firstAttribute="leading" secondItem="JsO-OK-mwt" secondAttribute="trailing" constant="10" id="EI3-Es-fz9"/>
                     <constraint firstItem="JsO-OK-mwt" firstAttribute="leading" secondItem="Ndf-68-k05" secondAttribute="trailing" constant="10" id="EcV-06-44N"/>
-                    <constraint firstItem="Kox-Pu-aTW" firstAttribute="top" secondItem="qdz-uf-Ots" secondAttribute="bottom" constant="10" id="GRF-HI-UZH"/>
-                    <constraint firstItem="izD-vv-g4X" firstAttribute="centerY" secondItem="Kox-Pu-aTW" secondAttribute="centerY" id="HXH-Ki-w8G"/>
-                    <constraint firstItem="qdz-uf-Ots" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="IKF-x2-VxN"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="izD-vv-g4X" secondAttribute="bottom" constant="5" id="Knn-nP-dzI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1ja-bz-9aM" secondAttribute="bottom" constant="10" id="HbW-oc-G9O"/>
                     <constraint firstItem="Ndf-68-k05" firstAttribute="top" secondItem="PF2-PY-3uC" secondAttribute="bottom" constant="10" id="Nlz-Iy-MPp"/>
                     <constraint firstItem="QzE-xK-Sp0" firstAttribute="top" secondItem="Ndf-68-k05" secondAttribute="bottom" constant="10" id="Q7P-1Z-QfV"/>
                     <constraint firstAttribute="trailingMargin" secondItem="QzE-xK-Sp0" secondAttribute="trailing" constant="10" id="QAs-TK-EfB"/>
@@ -128,25 +102,24 @@
                     <constraint firstItem="zzZ-Lf-RAK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="VKI-q4-fIA"/>
                     <constraint firstAttribute="trailingMargin" secondItem="PF2-PY-3uC" secondAttribute="trailing" id="VTM-QV-Vyr"/>
                     <constraint firstItem="XdR-KZ-xA8" firstAttribute="centerY" secondItem="Ndf-68-k05" secondAttribute="centerY" id="Z8S-bZ-Xmk"/>
-                    <constraint firstItem="izD-vv-g4X" firstAttribute="leading" secondItem="Kox-Pu-aTW" secondAttribute="trailing" constant="5" id="Zcq-xZ-1m8"/>
                     <constraint firstAttribute="trailing" secondItem="lV9-u9-cRa" secondAttribute="trailing" constant="10" id="cl8-Ww-9Xe"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="qdz-uf-Ots" secondAttribute="trailing" constant="10" id="czA-AV-HYo"/>
-                    <constraint firstItem="Kox-Pu-aTW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="eMg-u4-GA6"/>
                     <constraint firstItem="Ndf-68-k05" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="ebK-eI-N1m"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1ja-bz-9aM" secondAttribute="trailing" constant="10" id="hj2-9d-u6n"/>
+                    <constraint firstItem="1ja-bz-9aM" firstAttribute="top" secondItem="zzZ-Lf-RAK" secondAttribute="bottom" id="kJ4-Zw-DbP"/>
                     <constraint firstItem="PF2-PY-3uC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="l1E-gN-6vw"/>
                     <constraint firstItem="PF2-PY-3uC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lfq-z7-Ryc"/>
-                    <constraint firstItem="qdz-uf-Ots" firstAttribute="top" secondItem="zzZ-Lf-RAK" secondAttribute="bottom" constant="5" id="xHM-Nm-GM6"/>
+                    <constraint firstItem="1ja-bz-9aM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="qke-gv-KEL"/>
                 </constraints>
             </tableViewCellContentView>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
             <connections>
                 <outlet property="CommentMaker" destination="XdR-KZ-xA8" id="mI3-Zg-2JU"/>
                 <outlet property="captionLabel" destination="QzE-xK-Sp0" id="gmn-ko-3we"/>
-                <outlet property="comment" destination="qdz-uf-Ots" id="1WT-w1-Zks"/>
+                <outlet property="comment" destination="1ja-bz-9aM" id="w3g-xW-aaw"/>
                 <outlet property="dateLabel" destination="lV9-u9-cRa" id="G4a-tS-e5n"/>
                 <outlet property="likeButton" destination="Ndf-68-k05" id="yKZ-Rj-dDV"/>
                 <outlet property="likeLabel" destination="JsO-OK-mwt" id="sJW-ZL-Dsa"/>
                 <outlet property="postImageView" destination="PF2-PY-3uC" id="0kF-IA-UWi"/>
-                <outlet property="poster" destination="izD-vv-g4X" id="crQ-Rl-gG6"/>
             </connections>
             <point key="canvasLocation" x="34" y="179"/>
         </tableViewCell>

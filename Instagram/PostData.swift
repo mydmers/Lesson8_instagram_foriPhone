@@ -4,7 +4,7 @@
 //
 //  Created by yosi on 2018/02/24.
 //  Copyright © 2018年 mydmers. All rights reserved.
-//
+// 
 
 import UIKit
 import Firebase
@@ -17,7 +17,6 @@ class PostData: NSObject {
     var name: String?
     var caption: String?
     var comments: [String]? = []
-    var posters: [String]? = []
     var date: NSDate?
     var likes: [String] = []
     var isLiked: Bool = false
@@ -38,11 +37,7 @@ class PostData: NSObject {
         if let comments = valueDictionary["comments"] as? [String] {
             self.comments = comments
         }
-        
-        if let posters = valueDictionary["posters"] as? [String] {
-            self.posters = posters
-        }
-        
+                
         let time = valueDictionary["time"] as? String
         
         self.date = NSDate(timeIntervalSinceReferenceDate: TimeInterval(time!)!)

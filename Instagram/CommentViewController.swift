@@ -23,20 +23,11 @@ class CommentViewController: UIViewController {
         let postRef2 = Database.database().reference().child(Const.PostPath).child(postData.id!)
 
         if let commentText = Comment.text {
-            postData.comments?.append(commentText)
+            let name = Auth.auth().currentUser?.displayName
+            postData.comments?.append("\(name!):\(commentText)")
             postRef2.updateChildValues(["comments": postData.comments!])
-         }
-
-        if let posterText = Poster.text {
-            postData.posters?.append(posterText)
-            postRef2.updateChildValues(["posters": postData.posters!])
         }
         
-/*  let name = Auth.auth().currentUser?.displayName
-        postData.comments.append("\(name!):\(Comment.text!)")
-        postData.comments.append(["\(name!):\(Comment.text!)"])
-        postRef2.updateChildValues(["Comment": Comment]) */
-
         //前の画面に戻る
         self.dismiss(animated: true, completion: nil)
     }

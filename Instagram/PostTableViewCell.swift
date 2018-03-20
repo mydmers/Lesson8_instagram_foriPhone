@@ -19,7 +19,6 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var comment: UILabel!
-    @IBOutlet weak var poster: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,42 +38,10 @@ class PostTableViewCell: UITableViewCell {
         
 //------------------------------------------------------------------------------
         var commentText = ""
-        var posterText = ""
-        var combinedText = ""
-        for i in postData.comments! {
-            posterText = "\(String(describing: postData.posters?[index(ofAccessibilityElement: poster)]))"
-            commentText = "\(postData.comments!)"
-            combinedText += "\(posterText) : \(commentText)\n"
-            self.comment.text = combinedText + "\n"
-            combinedText = ""
+        for comment in postData.comments! {
+            commentText += "\(comment)\n"
         }
-//        self.comment.text = combinedText
-        
-        /*        if let poster = postData.posters {
-            self.poster.text = "\(poster)"
-        } */
-        
-/*        let name = Auth.auth().currentUser?.displayName
-        self.poster.text = name
-        
-        if let comment = postData.comments {
-            self.comment.text = "\(comment)"
-        }*/
-        
-/*        var posterText = ""
-        for poster in postData.posters! {
-            posterText += "\(poster)\n"
-        }
-        self.poster.text = posterText
-        
-        if let comment = postData.comments {
-            self.comment.text = "\(comment)"
-        }
-        
-        if let poster = postData.posters {
-            self.poster.text = "\(poster)"
-        }*/
-
+        self.comment.text = commentText
 //*-------------------------------------------------------------------------
         let likeNumber = postData.likes.count
         likeLabel.text = "\(likeNumber)"
