@@ -33,6 +33,7 @@
 		0AB4F6CB203B41BE008C9C36 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4F6CA203B41BD008C9C36 /* PostViewController.swift */; };
 		0AB4F6CD203B41D5008C9C36 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4F6CC203B41D5008C9C36 /* SettingViewController.swift */; };
 		0AC19D4E204AFAED004D1667 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC19D4D204AFAED004D1667 /* CommentViewController.swift */; };
+		950E238A2062A53F00BABC25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 950E23892062A53F00BABC25 /* GoogleService-Info.plist */; };
 		95DD485C206290AB00AA315E /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DD485A206290AA00AA315E /* AdobeCreativeSDKCore.framework */; };
 		95DD485D206290AB00AA315E /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DD485B206290AB00AA315E /* AdobeCreativeSDKImage.framework */; };
 		95DD485F2062917900AA315E /* AdobeCreativeSDKCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95DD485A206290AA00AA315E /* AdobeCreativeSDKCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -87,6 +88,7 @@
 		0AC19D4D204AFAED004D1667 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		752E11AC6F57DC85F520119A /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		82D3C231A7B56EC589F66B62 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
+		950E23892062A53F00BABC25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95DD485A206290AA00AA315E /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
 		95DD485B206290AB00AA315E /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
 		BBD4D02223C80A8C08C9390E /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 		0A834B2A2039D86600BC18B6 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				950E23892062A53F00BABC25 /* GoogleService-Info.plist */,
 				95DD485A206290AA00AA315E /* AdobeCreativeSDKCore.framework */,
 				95DD485B206290AB00AA315E /* AdobeCreativeSDKImage.framework */,
 				0A120D30203F204A007D0391 /* Instagram-Bridging-Header.h */,
@@ -255,6 +258,7 @@
 			files = (
 				0A834B362039D86600BC18B6 /* LaunchScreen.storyboard in Resources */,
 				0A04C2792042F76300796CC6 /* PostTableViewCell.xib in Resources */,
+				950E238A2062A53F00BABC25 /* GoogleService-Info.plist in Resources */,
 				0A834B332039D86600BC18B6 /* Assets.xcassets in Resources */,
 				0A834B312039D86600BC18B6 /* Main.storyboard in Resources */,
 			);
