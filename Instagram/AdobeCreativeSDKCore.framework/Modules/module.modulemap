@@ -1,6 +1,0 @@
-framework module AdobeCreativeSDKCore {
-  umbrella header "AdobeCreativeSDKCore.h"
-
-  export *
-  module * { export * }
-}
